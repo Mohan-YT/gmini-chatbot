@@ -24,3 +24,59 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.arrow{
+  animation: arrow 1.5s infinite ;
+}
+
+@keyframes arrow {
+  0%{
+      transform: scale(0.8);
+  }
+  50%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0.8);
+  }
+}
+.robot{
+  animation: robot 4s infinite ;
+}
+
+/* image animation */
+
+@keyframes robot{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+/* form input */
+.chat-form .form-btn{
+  display: none;
+}
+
+/* chat-body */
+.con-tainer .chat-body::-webkit-scrollbar{
+  width: 2px;
+}
+.con-tainer .chat-body::-webkit-scrollbar-thumb {
+  background-color:#ddd3f9; 
+  border-radius: 8px;
+}
+.con-tainer .chat-body::-webkit-scrollbar-track {
+  background-color:transparent;
+}
+
+/* :placeholder-shown works because the button is hidden until the user types something.
+ */
+.message-input:not(:placeholder-shown) ~ .form-btn{
+  display: flex;
+}
