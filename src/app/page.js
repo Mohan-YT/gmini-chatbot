@@ -117,7 +117,7 @@ export default function Home() {
 
               <motion.div className={` bg-violet-50  shadow-lg ${
                             isMobile ? "fixed w-full h-full top-0 left-0" : "relative  flex flex-col justify-center items-center w-[40vw] h-[90vh] rounded-2xl"
-                          } ${isChatBox ? "flex z-10" : "hidden"}  flex flex-col`}
+                          } ${isChatBox ? "flex " : "hidden"} z-20 flex flex-col`}
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={{
                             opacity: isChatBox ? 1 : 0,
