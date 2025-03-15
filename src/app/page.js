@@ -84,7 +84,7 @@ export default function Home() {
 
   return (
     <>
-      <main className={` w-full h-screen ${quicksand.className} flex justify-center items-center transition-all 2s ease bg-violet-100 ${isMobile ? "relative" : ""} `}>
+      <main className={` w-full h-screen ${quicksand.className} flex justify-center items-center transition-all 2s ease bg-violet-100 ${isMobile ? "relative" : ""} z-0`}>
 
         {/* AI - Image Section */}
     

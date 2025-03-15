@@ -10,7 +10,7 @@ export default function ChatMessage({chat}) {
           !chat.hideInChat && (// if hideInChat false then it is work
             <>
                 <Image  src={ai_profile} alt="AI-image" className=" w-11 h-11 bg-violet-100 rounded-full p-1 me-2"/>
-                <p className={`message-text ${chat.isError && "text-red-500"} max-w-[75%] break-words whitespace-pre-line bg-violet-100 rounded-t-xl rounded-br-xl px-2.5 py-2`}>{chat.text}</p>
+                <p className={`message-text ${chat.isError && "text-red-500"} max-w-[75%] break-words whitespace-pre-line bg-violet-100 rounded-t-xl rounded-br-xl px-2.5 py-2 z-20 `}>{chat.text}</p>
             </>
           )
           )  : (
