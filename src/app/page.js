@@ -102,7 +102,7 @@ export default function Home() {
                            transition={{ duration: 0.5, ease: "easeInOut" }}>
 
                     <div className="flex flex-col justify-center items-center">
-                        <h2 className={` text-violet-300 ${spicyRice.className}`}>I'm a Chatbot</h2>
+                        <h2 className={` text-violet-300 ${spicyRice.className}`}>I&#39;m a Chatbot</h2>
                         <FaArrowDown  className="arrow w-3 h-3 text-violet-200  " />
                     </div>
 
