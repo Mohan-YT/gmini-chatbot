@@ -140,7 +140,7 @@ export default function Home() {
 
                     {/* Chatbot Body */}
                     <div ref={chatBodyRef} className="chat-body pt-3 pb-5 flex flex-col w-[100%] gap-y-4 ps-3 pe-3 mb-[5rem] md:h-[75%] overflow-auto z-20 ">
-                      <p className="text-center">Welcome to Chatbot</p>
+                      <p className="text-center text-black">Welcome to Chatbot</p>
                         {chatHistory.map((chat,index)=>(
                           <ChatMessage key={index} chat={chat} />
                         ))}
