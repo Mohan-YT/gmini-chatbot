@@ -63,6 +63,14 @@ body {
   display: none;
 }
 
+.chat-form input::placeholder{
+  color: rgb(61, 61, 61);
+}
+
+.chat-form input{
+  color: black;
+}
+
 /* chat-body */
 .con-tainer .chat-body::-webkit-scrollbar{
   width: 2px;
