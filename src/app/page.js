@@ -115,9 +115,9 @@ export default function Home() {
         {/* Main Container For Chat Box */}
         <div className="con-tainer">
 
-              <motion.div className={` bg-violet-50  shadow-lg ${
+              <motion.div className={` bg-violet-50  shadow-lg z-10 ${
                             isMobile ? "fixed w-full h-full top-0 left-0" : "relative  flex flex-col justify-center items-center w-[40vw] h-[90vh] rounded-2xl"
-                          } ${isChatBox ? "flex " : "hidden"} z-20 flex flex-col`}
+                          } ${isChatBox ? "flex " : "hidden"}  flex flex-col`}
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={{
                             opacity: isChatBox ? 1 : 0,
@@ -149,7 +149,7 @@ export default function Home() {
                     </div>
 
                     {/* Chatbot-Footer */}
-                    <div className="chat-footer absolute bottom-0 left-0 w-[100%] md:h-[12%] px-3 py-4 md:mb-0.5">
+                    <div className="chat-footer absolute bottom-0 left-0 w-[100%] md:h-[12%] px-3 py-4 md:mb-0.5 z-20">
                        <ChatForm chatHistory={chatHistory} setChatHistory={setChatHistory} generateResponse={generateResponse} />
                     </div>
 
