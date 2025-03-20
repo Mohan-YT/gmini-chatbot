@@ -5,7 +5,7 @@ import ai_profile from '../../public/ai-profile2.png'
 export default function ChatMessage({chat}) {
     console.log(chat)
   return (
-    <div className={`message ${chat.role === "model" ? 'bot flex items-center' : "user  items-end flex flex-col"} user-message `}>
+    <div className={`message ${chat.role === "model" ? 'bot flex items-center' : "user  items-end flex flex-col"} user-message z-20`}>
         {chat.role === "model" ? (
           !chat.hideInChat && (// if hideInChat false then it is work
             <>
