@@ -31,7 +31,7 @@ export default function ChatForm({chatHistory,setChatHistory, generateResponse})
 
   return (
     <form action="#" className="chat-form flex items-center outline outline-violet-300 rounded-3xl focus-within:outline-2 z-20" onSubmit={handleSubmit}>
-    <input ref={inputRef} type="text" placeholder="Ask Anything..." className="message-input border-0 outline-0 h-11 w-[100%] py-4 px-3" />
+    <input ref={inputRef} type="text" placeholder="Ask Anything..." className="message-input border-0 outline-0 h-11 w-[100%] py-4 px-3 text-black" />
     <button type='submit' className="form-btn  w-10 h-9 bg-violet-600 justify-center items-center rounded-full pe-1 m-1 shrink-1 cursor-pointer text-white transition-all duration-300 ease-out hover:bg-violet-300 hover:text-violet-500 z-20">
         <BsFillSendFill className="transform rotate-45 " />
     </button>
